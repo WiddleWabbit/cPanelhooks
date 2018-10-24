@@ -1,0 +1,17 @@
+###		Save Script To	###
+/usr/local/cpanel/
+
+###		Command to register hook	###
+/usr/local/cpanel/bin/manage_hooks add script /usr/local/cpanel/varnish_req_perm.sh --manual 1 --category System --event upcp --stage post
+
+###		Command to check if hook registered properly	###
+/usr/local/cpanel/bin/manage_hooks list
+
+### 	Command to test hook	###
+/usr/local/cpanel/scripts/upcp
+
+###		Command to delete hook in future	###
+/usr/local/cpanel/bin/manage_hooks delete script /usr/local/cpanel/varnish_req_perm.sh --manual 1 --category System --event upcp --stage post
+
+
+
