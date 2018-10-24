@@ -1,0 +1,14 @@
+###		Save Script To	###
+/usr/local/cpanel/
+
+###		Command to register hook	###
+/usr/local/cpanel/bin/manage_hooks add script /usr/local/cpanel/autossl_nginx_check.sh --manual 1 --category AutoSSL --event installssl --stage post
+
+###		Command to check if hook registered properly	###
+/usr/local/cpanel/bin/manage_hooks list
+
+###		Command to delete hook in future	###
+/usr/local/cpanel/bin/manage_hooks delete script /usr/local/cpanel/autossl_nginx_check --manual 1 --category AutoSSL --event installssl --stage post
+
+
+
